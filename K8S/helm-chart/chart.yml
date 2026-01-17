@@ -1,1 +1,5 @@
+apiVersion: v2
+name: multi-tier-app
+description: A multi-tier app with frontend, backend, and database
+version: 1.0.0
 
