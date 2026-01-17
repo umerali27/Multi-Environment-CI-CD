@@ -13,3 +13,5 @@ db:
   db: taskdb
   port: 5432
 
+ingress:
+  host: yourdomain.com   # Change this to your domain or localhost for local testing
