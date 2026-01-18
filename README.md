@@ -9,13 +9,3 @@ ready for deployment to **Kubernetes** using **Helm charts**.
 The project also includes a **CI/CD pipeline** using **Jenkins** to automate building, testing, and deploying the application.
 
 ---
-🧰 Tech Stack
-
-Frontend: React, JavaScript
-Backend: Flask, Python
-Database: PostgreSQL
-Containerization: Docker
-CI/CD: Jenkins
-Orchestration: Kubernetes
-Packaging: Helm
-Networking: Kubernetes Services & Ingress
