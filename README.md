@@ -10,14 +10,52 @@ The project also includes a **CI/CD pipeline** using **Jenkins** to automate bui
 
 ---
 
-## Features
-- React frontend with REST API integration
-- Flask backend serving API endpoints
-- PostgreSQL database for persistent storage
-- Fully containerized using Docker
-- Local testing with Docker Compose
-- Automated CI/CD pipeline with Jenkins
-- Kubernetes-ready deployment using Helm charts
-- ingress routing for frontend access
+🏗️ Application Architecture
 
----
+Architecture Type: Three-Tier Architecture
+
+User
+  |
+  v
+Ingress Controller
+  |
+  v
+Frontend (React)
+  |
+  v
+Backend (Flask REST API)
+  |
+  v
+PostgreSQL Database
+
+Architecture Components
+
+Frontend
+
+React-based UI
+
+Communicates with backend using REST APIs
+
+Backend
+
+Flask REST API
+
+Handles business logic and database communication
+
+Database
+
+PostgreSQL deployed as a container
+
+No application code required (official image used)
+
+CI/CD
+
+Jenkins automates build, test, image creation, and deployment
+
+Orchestration
+
+Kubernetes manages containers
+
+Helm charts handle templated deployments
+
+Ingress exposes the frontend externally
