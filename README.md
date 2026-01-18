@@ -1,3 +1,4 @@
+![Infrastructure Image](https://github.com/umerali27/Multi-Tier-Web-Application/blob/main/diagram-export-1-18-2026-8_02_39-PM.png)
 # Multi-Tier Web Application with CI/CD and Kubernetes
 
 ## Project Overview
