@@ -1,0 +1,15 @@
+namespace: prod
+
+replicaCount: 3
+
+image:
+  frontend: frontend:prod
+  backend: backend:prod
+
+resources:
+  limits:
+    cpu: "1000m"
+    memory: "1024Mi"
+
+ingress:
+  host: myapp.com
