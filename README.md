@@ -10,7 +10,7 @@ The goal of this project is to showcase **environment isolation, promotion-based
 ---
 
 ## Architecture
-
+![Infrastructure Image](https://github.com/umerali27/Multi-Environment-CI-CD/blob/main/Dev%2Cstag%2Cprod.png)
 
 ---
 
