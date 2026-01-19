@@ -1,23 +1,63 @@
-![Infrastructure Image](https://github.com/umerali27/Multi-Tier-Web-Application/blob/main/diagram-export-1-18-2026-8_02_39-PM.png)
-# Multi-Tier Web Application with CI/CD and Kubernetes
+# Multi-Environment CI/CD Deployment (Dev / Staging / Prod)
 
-## Project Overview
-This project is a demonstrates a **complete multi-tier web application** with modern **DevOps practices**. 
-It includes a **React frontend**, **Flask backend**, and **PostgreSQL database**, 
-all **containerized with Docker**, tested locally with `docker-compose`, and 
-ready for deployment to **Kubernetes** using **Helm charts**.  
+## Overview
 
-The project also includes a **CI/CD pipeline** using **Jenkins** to automate building, testing, and deploying the application.
+This project demonstrates a **production-grade multi-environment CI/CD pipeline** for a containerized multi-tier web application.  
+The same application is deployed across **DEV, STAGING, and PROD environments** using Kubernetes namespaces, Helm, and Jenkins.
+
+The goal of this project is to showcase **environment isolation, promotion-based deployments, and enterprise CI/CD workflows** commonly used in real-world DevOps teams.
 
 ---
-🎯 Purpose of This Project
 
-This project was created to demonstrate:
+## Architecture
 
-* Real-world DevOps CI/CD pipeline design
 
-* Containerization best practices
+---
 
-* Kubernetes and Helm-based deployments
+## Environment Strategy
 
-* Multi-tier application architecture.
+| Environment | Purpose |
+|------------|--------|
+| DEV | Active development and testing |
+| STAGING | Pre-production validation |
+| PROD | Production deployment |
+
+Each environment:
+- Runs in a **separate Kubernetes namespace**
+- Uses the **same Helm chart**
+- Has **environment-specific values**
+
+---
+
+
+---
+
+## CI/CD Workflow
+
+1. Developer pushes code to GitHub
+2. Jenkins pipeline is triggered
+3. Docker images are built and pushed
+4. Application is deployed to DEV
+5. Application is promoted to STAGING
+6. Manual approval is required
+7. Application is deployed to PROD
+
+---
+
+## Tools & Technologies
+
+- Docker
+- Jenkins
+- Kubernetes
+- Helm
+- GitHub
+
+---
+
+## Project Status
+
+✔ Multi-environment setup completed  
+✔ Promotion-based deployment implemented  
+✔ Production-ready CI/CD workflow
+
+
